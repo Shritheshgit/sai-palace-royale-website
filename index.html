@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Sai Palace Royale</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
 body{
+margin:0;
+font-family:Arial;
 background:#0f172a;
 color:white;
 }
 
 header{
+background:#020617;
+padding:20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 10%;
-background:#020617;
-position:sticky;
-top:0;
 }
 
 header h1{
@@ -38,29 +27,29 @@ color:#38bdf8;
 }
 
 nav a{
+color:white;
 margin-left:20px;
 text-decoration:none;
-color:white;
 }
 
 .hero{
-height:90vh;
-background:url("https://images.unsplash.com/photo-1566073771259-6a8506099945") center/cover no-repeat;
+height:80vh;
+background:url("https://images.unsplash.com/photo-1566073771259-6a8506099945") center/cover;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 }
 
 .hero h2{
 font-size:50px;
-background:rgba(0,0,0,0.5);
+background:rgba(0,0,0,0.6);
 padding:20px;
 border-radius:10px;
 }
 
 section{
-padding:80px 10%;
+padding:60px 10%;
 }
 
 .rooms{
@@ -69,22 +58,17 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.card{
+.room{
 background:#1e293b;
 border-radius:10px;
 overflow:hidden;
-transition:0.3s;
 }
 
-.card:hover{
-transform:scale(1.05);
-}
-
-.card img{
+.room img{
 width:100%;
 }
 
-.card h3{
+.room h3{
 padding:10px;
 }
 
@@ -103,30 +87,10 @@ border-radius:10px;
 text-align:center;
 }
 
-button{
-padding:12px 20px;
-background:#38bdf8;
-border:none;
-border-radius:5px;
-cursor:pointer;
-font-weight:bold;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:15px 20px;
-border-radius:50px;
-color:white;
-text-decoration:none;
-}
-
 footer{
+background:#020617;
 text-align:center;
 padding:20px;
-background:#020617;
 }
 
 </style>
@@ -147,11 +111,9 @@ background:#020617;
 
 </header>
 
-<section class="hero">
-
+<div class="hero">
 <h2>Welcome to Sai Palace Royale</h2>
-
-</section>
+</div>
 
 <section id="rooms">
 
@@ -159,17 +121,17 @@ background:#020617;
 
 <div class="rooms">
 
-<div class="card">
+<div class="room">
 <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
 <h3>Deluxe Room</h3>
 </div>
 
-<div class="card">
+<div class="room">
 <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
 <h3>Luxury Suite</h3>
 </div>
 
-<div class="card">
+<div class="room">
 <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4">
 <h3>Family Room</h3>
 </div>
@@ -197,16 +159,11 @@ background:#020617;
 
 <h2>Contact Us</h2>
 
-<p>📍 Sai Palace Royale, India</p>
-<p>📞 +91 98765 43210</p>
-
-<br>
-
-<button>Reserve Your Table</button>
+<p>📍 Sai Palace Royale</p>
+<p>📞 +91 9876543210</p>
+<p>📧 saipalace@email.com</p>
 
 </section>
-
-<a class="whatsapp" href="https://wa.me/919876543210">WhatsApp</a>
 
 <footer>
 
