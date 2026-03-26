@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+
+<title>Sai Palace Royale</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -19,7 +21,6 @@ font-family:'Poppins',sans-serif;
 body{
 background:#0f172a;
 color:white;
-line-height:1.6;
 }
 
 header{
@@ -44,31 +45,25 @@ color:white;
 
 .hero{
 height:90vh;
+background:url("https://images.unsplash.com/photo-1566073771259-6a8506099945") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-flex-direction:column;
 }
 
-.hero img{
-width:180px;
-border-radius:50%;
-margin-bottom:20px;
-animation: float 3s infinite ease-in-out;
-}
-
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-10px)}
-100%{transform:translateY(0)}
+.hero h2{
+font-size:50px;
+background:rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
 }
 
 section{
 padding:80px 10%;
 }
 
-.portfolio{
+.rooms{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
@@ -76,42 +71,56 @@ gap:20px;
 
 .card{
 background:#1e293b;
-padding:20px;
 border-radius:10px;
+overflow:hidden;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:scale(1.05);
 }
 
 .card img{
 width:100%;
+}
+
+.card h3{
+padding:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
 border-radius:10px;
-margin-bottom:10px;
 }
 
-.contact form{
-display:flex;
-flex-direction:column;
-max-width:500px;
-}
-
-input, textarea{
-padding:12px;
-margin:10px 0;
-border:none;
-border-radius:5px;
+.contact{
+text-align:center;
 }
 
 button{
-padding:12px;
-border:none;
+padding:12px 20px;
 background:#38bdf8;
-color:black;
-font-weight:bold;
-cursor:pointer;
+border:none;
 border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px 20px;
+border-radius:50px;
+color:white;
+text-decoration:none;
 }
 
 footer{
@@ -121,78 +130,87 @@ background:#020617;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>MyPortfolio</h1>
+
+<h1>Sai Palace Royale</h1>
 
 <nav>
-<a href="#home">Home</a>
-<a href="#portfolio">Portfolio</a>
+<a href="#rooms">Rooms</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 
 </header>
 
-<section class="hero" id="home">
+<section class="hero">
 
-<img src="https://i.pravatar.cc/200" alt="profile">
-
-<h2>Hello, I'm a Web Developer</h2>
-<p>I create modern websites and applications.</p>
+<h2>Welcome to Sai Palace Royale</h2>
 
 </section>
 
-<section id="portfolio">
+<section id="rooms">
 
-<h2>My Work</h2>
+<h2>Our Rooms</h2>
 
-<div class="portfolio">
+<div class="rooms">
 
 <div class="card">
-<img src="https://picsum.photos/400/300?1">
-<h3>Project One</h3>
-<p>Website design project</p>
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<h3>Deluxe Room</h3>
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/400/300?2">
-<h3>Project Two</h3>
-<p>UI/UX Design</p>
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+<h3>Luxury Suite</h3>
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/400/300?3">
-<h3>Project Three</h3>
-<p>Web Application</p>
+<img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4">
+<h3>Family Room</h3>
 </div>
 
 </div>
 
 </section>
 
-<section class="contact" id="contact">
+<section id="gallery">
 
-<h2>Contact Me</h2>
+<h2>Hotel Gallery</h2>
 
-<form>
+<div class="gallery">
 
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
+<img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
+<img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa">
+<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
 
-<textarea rows="5" placeholder="Message"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
+</div>
 
 </section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Sai Palace Royale, India</p>
+<p>📞 +91 98765 43210</p>
+
+<br>
+
+<button>Reserve Your Table</button>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/919876543210">WhatsApp</a>
 
 <footer>
 
-<p>© 2026 My Portfolio</p>
+<p>© 2026 Sai Palace Royale</p>
 
 </footer>
 
